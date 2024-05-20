@@ -1,0 +1,80 @@
+{
+  "uuid": "b0e9a562-7424-476e-b5b3-bbe3dba8ade2",
+  "lastMigration": 32,
+  "name": "Chart",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3001,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "0fb1f4bb-cc8a-4ce5-bcf3-de62439e4b05",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "chart",
+      "responses": [
+        {
+          "uuid": "3d965cf7-76be-4c16-8f26-a26c4856f264",
+          "body": "{\r\n  \"data\": [\r\n  {\"year\": 2014, \"visitors\": 420},\r\n  {\"year\": 2015, \"visitors\": 475},\r\n  {\"year\": 2016, \"visitors\": 500},\r\n  {\"year\": 2017, \"visitors\": 660},\r\n  {\"year\": 2018, \"visitors\": 550},\r\n  {\"year\": 2019, \"visitors\": 630},\r\n  {\"year\": 2020, \"visitors\": 470}\r\n ]\r\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "0fb1f4bb-cc8a-4ce5-bcf3-de62439e4b05"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [],
+  "callbacks": []
+}
